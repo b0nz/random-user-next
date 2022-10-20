@@ -1,3 +1,5 @@
+[![codecov](https://codecov.io/gh/b0nz/random-user-next/branch/master/graph/badge.svg?token=0KEBEDJRGK)](https://codecov.io/gh/b0nz/random-user-next)
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
