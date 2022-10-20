@@ -1,5 +1,5 @@
 import React from 'react'
-import { RiCalendar2Line, RiHome4Fill, RiMapPinUserFill } from 'react-icons/ri'
+import { RiCalendar2Fill, RiHome4Fill, RiMapPinUserFill } from 'react-icons/ri'
 import styled from 'styled-components'
 import DrawerItem from './DrawerItem'
 
@@ -32,7 +32,7 @@ const Drawer: React.FC<IDrawer> = ({ isMobile = false }) => {
           icon={<RiMapPinUserFill size={24} />}
           href="/"
         />
-        <DrawerItem label="Pickup" icon={<RiCalendar2Line size={24} />} />
+        <DrawerItem label="Pickup" icon={<RiCalendar2Fill size={24} />} />
       </div>
     </StyledDrawer>
   )
