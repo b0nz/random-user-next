@@ -1,7 +1,7 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 import { useEffect, useMemo } from 'react'
 import Input from '@/components/Input'
-import Layout from '@/components/Layout'
+import Layout from '@/components/Layout/Layout'
 import { useViewport } from '@/hooks/useViewport'
 import type { NextPage } from 'next'
 import Head from 'next/head'
@@ -50,6 +50,7 @@ const Driver: NextPage = () => {
             </div>
             <div className="page-header-item--flex">
               <Input
+                data-testid="search"
                 block={isMobile}
                 onChange={_.debounce(
                   (e: React.ChangeEvent<HTMLInputElement>) =>
@@ -133,6 +134,7 @@ const Driver: NextPage = () => {
         {data && (
           <div className="container pagination">
             <Button
+              data-testid="prev-btn"
               variant="transparent"
               disabled={store?.currentPage === 1}
               onClick={() => router.push(`/?page=${store?.currentPage - 1}`)}
@@ -141,6 +143,7 @@ const Driver: NextPage = () => {
               Previous Page
             </Button>
             <Button
+              data-testid="next-btn"
               variant="transparent"
               disabled={store?.currentPage === store?.usersChunk?.length}
               onClick={() => router.push(`/?page=${store?.currentPage + 1}`)}

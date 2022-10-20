@@ -1,6 +1,6 @@
 import { useViewport } from '@/hooks/useViewport'
-import Drawer from './Drawer'
-import Header from './Header'
+import Drawer from '@/components/Drawer'
+import Header from '@/components/Header'
 import styled from 'styled-components'
 import React from 'react'
 
@@ -18,7 +18,7 @@ const Layout: React.FC<ILayout> = ({ children }) => {
       <Header isMobile={isMobile} drawer={drawer} handleDrawer={setDrawer} />
       <>
         {!isMobile && <Drawer isMobile={isMobile} show={drawer} />}
-        <main>{children}</main>
+        <main data-testid="layout-content">{children}</main>
       </>
     </Wrapper>
   )
