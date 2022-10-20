@@ -29,7 +29,6 @@ const Card: React.FC<ICard> = ({ header, children, ...props }) => {
 const StyledCard = styled.div`
   background-color: white;
   border-radius: 4px;
-  width: max-content;
 
   hr {
     border-color: var(--grey-50);
