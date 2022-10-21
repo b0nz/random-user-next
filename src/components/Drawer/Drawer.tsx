@@ -1,30 +1,12 @@
 import React from 'react'
 import { RiCalendar2Fill, RiHome4Fill, RiMapPinUserFill } from 'react-icons/ri'
 import styled from 'styled-components'
+import { IDrawer } from './Drawer.models'
 import DrawerItem from './DrawerItem'
-
-export interface IRoutes {
-  key?: string
-  name?: string
-  icon?: string
-  route?: string
-}
-
-export interface IDrawer {
-  isMobile?: boolean
-  show?: boolean
-}
 
 const Drawer: React.FC<IDrawer> = ({ isMobile = false }) => {
   return (
-    <StyledDrawer
-      isMobile={isMobile}
-      style={
-        {
-          // '--d': isMobile ? (show ? 'inline-block' : 'hidden') : 'inline-block',
-        } as React.CSSProperties
-      }
-    >
+    <StyledDrawer isMobile={isMobile}>
       <div className="menu">
         <DrawerItem label="Beranda" icon={<RiHome4Fill size={24} />} />
         <DrawerItem
@@ -43,7 +25,6 @@ const StyledDrawer = styled.div<IDrawer>`
   position: fixed;
   z-index: 3;
   height: 100vh;
-  // display: var(--d);
   width: ${({ isMobile }) => (isMobile ? '100%' : '280px')};
 
   .menu {

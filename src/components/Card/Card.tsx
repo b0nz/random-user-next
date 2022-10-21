@@ -1,12 +1,6 @@
 import styled from 'styled-components'
-import { RiMoreLine } from 'react-icons/ri'
-import Button from '../Button'
 import React from 'react'
-
-export interface ICard extends React.HTMLAttributes<HTMLElement> {
-  header?: React.ReactNode
-  children?: React.ReactNode
-}
+import { ICard } from './Card.models'
 
 const Card: React.FC<ICard> = ({ header, children, ...props }) => {
   return (

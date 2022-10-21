@@ -1,12 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-
-export interface IInput extends React.HTMLAttributes<HTMLElement> {
-  icon?: React.ReactNode
-  size?: 'sm' | 'lg'
-  width?: number
-  block?: boolean
-}
+import { IInput } from './Input.models'
 
 const STYLES = {
   sm: {

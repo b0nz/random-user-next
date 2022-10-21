@@ -3,10 +3,7 @@ import Drawer from '@/components/Drawer'
 import Header from '@/components/Header'
 import styled from 'styled-components'
 import React from 'react'
-
-export interface ILayout {
-  children?: React.ReactNode
-}
+import { ILayout } from './Layout.models'
 
 const Layout: React.FC<ILayout> = ({ children }) => {
   const { isMobile } = useViewport()

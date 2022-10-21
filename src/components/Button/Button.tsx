@@ -1,18 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import { THEME } from '@/utils/global-style'
-
-export interface IButton extends React.HTMLAttributes<HTMLButtonElement> {
-  children?: React.ReactNode
-  style?: React.CSSProperties
-  rightIcon?: React.ReactNode
-  variant?: 'primary' | 'transparent' | 'icon'
-  disabled?: boolean
-  block?: boolean
-  size?: 'lg' | 'md' | 'sm' | 'xs'
-  htmlType?: 'button' | 'submit' | 'reset'
-  onClick?: React.MouseEventHandler<HTMLButtonElement>
-}
+import { IButton } from './Button.models'
 
 const STYLES = {
   size: {

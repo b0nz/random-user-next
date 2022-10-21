@@ -5,12 +5,7 @@ import { THEME } from '@/utils/global-style'
 import Button from '@/components/Button'
 import React from 'react'
 import Link from 'next/link'
-
-export interface IHeader extends React.HTMLAttributes<HTMLElement> {
-  isMobile?: boolean
-  drawer?: boolean
-  handleDrawer?: React.Dispatch<React.SetStateAction<boolean>>
-}
+import { IHeader } from './Header.models'
 
 const Header: React.FC<IHeader> = ({
   isMobile = false,

@@ -29,12 +29,11 @@ describe('useViewPort', () => {
       </ViewportProvider>,
     )
 
-    
     act(() => {
       window.resizeTo(700, 1024)
     })
     expect(queryByText(/mobile/)).toBeDefined()
-    
+
     act(() => {
       window.resizeTo(1400, 1024)
     })
