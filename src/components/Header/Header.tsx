@@ -5,7 +5,7 @@ import { THEME } from '@/utils/global-style'
 import Button from '@/components/Button'
 import React from 'react'
 import Link from 'next/link'
-import { IHeader } from './Header.models'
+import { IHeader } from './Header.model'
 
 const Header: React.FC<IHeader> = ({
   isMobile = false,
