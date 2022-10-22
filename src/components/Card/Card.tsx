@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 import React from 'react'
-import { ICard } from './Card.models'
+import { ICard } from './Card.model'
 
 const Card: React.FC<ICard> = ({ header, children, ...props }) => {
   return (
