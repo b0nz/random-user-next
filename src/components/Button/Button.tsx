@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import { THEME } from '@/utils/global-style'
-import { IButton } from './Button.models'
+import { IButton } from './Button.model'
 
 const STYLES = {
   size: {

@@ -1,11 +1,11 @@
 import {
-  HTMLAttributes,
   MouseEventHandler,
   ReactNode,
   CSSProperties,
+  ButtonHTMLAttributes,
 } from 'react'
 
-export interface IButton extends HTMLAttributes<HTMLButtonElement> {
+export interface IButton extends ButtonHTMLAttributes<HTMLButtonElement> {
   children?: ReactNode
   style?: CSSProperties
   rightIcon?: ReactNode
