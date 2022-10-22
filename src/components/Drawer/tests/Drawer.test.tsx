@@ -23,5 +23,6 @@ describe('Drawer', () => {
     ;(useRouter as jest.Mock).mockReturnValue(mockRouter)
     render(<Drawer isMobile />)
     await screen.findAllByText('Beranda')
+    expect(screen.getByText('Beranda')).toBeInTheDocument()
   })
 })

@@ -1,7 +1,7 @@
 import React from 'react'
 import { RiCalendar2Fill, RiHome4Fill, RiMapPinUserFill } from 'react-icons/ri'
 import styled from 'styled-components'
-import { IDrawer } from './Drawer.models'
+import { IDrawer } from './Drawer.model'
 import DrawerItem from './DrawerItem'
 
 const Drawer: React.FC<IDrawer> = ({ isMobile = false }) => {

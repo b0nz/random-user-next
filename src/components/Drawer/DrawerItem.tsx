@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import { useRouter } from 'next/router'
 import styled from 'styled-components'
-import { IDrawerItem } from './DrawerItem.models'
+import { IDrawerItem } from './DrawerItem.model'
 
 const DrawerItem: React.FC<IDrawerItem> = ({ icon, label, href = '' }) => {
   const router = useRouter()
