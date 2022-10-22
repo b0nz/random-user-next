@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import { IInput } from './Input.models'
+import { IInput } from './Input.model'
 
 const STYLES = {
   sm: {
@@ -21,13 +21,13 @@ const STYLES = {
 }
 
 const Input: React.FC<IInput> = ({
-  size = 'lg',
+  inputSize = 'lg',
   width = 150,
   icon,
   block,
   ...delegate
 }) => {
-  const _size = STYLES[size]
+  const _size = STYLES[inputSize]
 
   return (
     <Wrapper
